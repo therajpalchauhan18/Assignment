@@ -1,0 +1,62 @@
+Question 1: Explain the CSS box model and its components (content, padding, border, margin). How does each affect the size of an element?
+
+Answer: The CSS box model describes the structure and spacing of elements in a webpage. Every element is represented as a rectangular box.
+
+ *Components of box model:
+
+   Content:-
+	-The actual content of the element (text, image, etc.)
+	-Width and height apply to this area by default
+
+   Padding:-
+	-Space between content and border
+	-Increases the size of the element
+
+   Border:-
+	-Surrounds the padding and content
+	-Adds thickness to the element size
+
+   Margin:-
+	-Space outside the border
+	-Creates distance between elements
+
+   How it affects size:-
+	-Total size = content + padding + border + margin
+	-Increasing padding or border increases element size
+	-Margin does not affect internal size but affects spacing outside
+
+   Example:-
+	div {
+  	  width: 200px;
+  	  padding: 10px;
+  	  border: 5px solid black;
+  	  margin: 15px;
+	}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2: What is the difference between border-box and content-box box-sizing in CSS? Which is the default?
+
+Answer:
+
+*content-box:
+    -Default value in CSS
+    -Width and height include only content
+    -Padding and border are added outside
+
+  Example:-
+	box-sizing: content-box;
+
+*border-box:
+    -Width and height include content, padding, and border
+    -Total size remains fixed
+
+  Example:-
+	box-sizing: border-box;
+
+Difference:
+	-content-box increases total size when padding/border is added
+	-border-box keeps total size fixed
+
+Default:
+	-content-box is the default box-sizing value
