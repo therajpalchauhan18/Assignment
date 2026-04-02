@@ -1,0 +1,64 @@
+Question 1: Explain the structure of an HTML table and the purpose of each of the following elements: <table>, <tr>, <th>, <td>, and <thead>.
+
+Answer: An HTML table is used to display data in rows and columns.
+
+Structure of a table:
+
+<table>
+  <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+
+Purpose of elements:
+
+<table> : Defines the table
+<tr> : Defines a table row
+<th> : Defines a table header (bold and centered)
+<td> : Defines table data (normal cell)
+<thead> : Groups the header content of the table
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2: What is the difference between colspan and rowspan in tables? Provide examples.
+
+Answer:
+colspan:-
+- Used to merge columns
+- A cell spans across multiple columns
+
+Example:
+<td colspan="2">Data</td>
+
+rowspan:-
+- Used to merge rows
+- A cell spans across multiple rows
+
+Example:
+<td rowspan="2">Data</td>
+
+Difference:
+- colspan merges columns (horizontal)
+- rowspan merges rows (vertical)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 3: Why should tables be used sparingly for layout purposes? What is a better alternative?
+
+Answer: Tables should be used only for displaying data, not for page layout.
+
+Reasons:
+- Makes code complex and hard to maintain
+- Not responsive for different screen sizes
+- Bad for accessibility and SEO
+
+Better alternative:
+- Use CSS for layout design
+- Use Flexbox and Grid for modern layouts

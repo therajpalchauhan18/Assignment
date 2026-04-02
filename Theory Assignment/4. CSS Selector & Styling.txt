@@ -1,0 +1,90 @@
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+Answer: A CSS selector is used to select and target HTML elements so that styles can be applied to them.
+Types of selectors:
+	
+	(i) Element selector:-
+
+	-Selects elements by tag name
+	Example:
+	p {
+  	   color: blue;
+	}
+	
+	(ii) Class selector:-
+
+	-Selects elements using a class attribute and Written using a dot (.)
+	Example:
+
+	.myclass {
+  	   color: red;
+	}
+
+	(iii) ID selector:-
+
+	-Selects a unique element using an ID and Written using a hash (#)
+	Example:
+
+	#myid {
+  	   color: green;
+	}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved?
+
+Answer: * CSS specificity determines which style rule is applied when multiple rules target the same element.
+
+	Priority order:-
+
+	-Inline CSS (highest priority)
+	-ID selector
+	-Class selector
+	-Element selector (lowest priority)
+
+* How conflicts are resolved:
+
+-The rule with higher specificity is applied
+-If specificity is same, the last written rule is applied
+-Inline styles override internal and external CSS
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss advantages and disadvantages.
+
+Answer:
+
+*Inline CSS:- Applied directly inside HTML tags.
+Example:
+	<p style="color: red;">Hello </p>
+
+Advantages:-
+	Quick and easy for small changes
+Disadvantages:-
+	-Not reusable
+	-Makes code messy
+
+* Internal CSS:- Written inside <style> tag in <head> section.
+Example:
+	<style>
+	   p {
+  	      color: blue;
+	   }
+	</style>
+
+Advantages:-
+	Useful for single page styling
+
+Disadvantages:-
+	Cannot be reused across multiple pages
+
+*External CSS:- Written in a separate .css file and linked to HTML.
+Example:
+	<link rel="stylesheet" href="style.css">
+
+Advantages:-
+	-Reusable across multiple pages
+	-Clean and maintainable
+
+Disadvantages:-
+	-Requires extra file
