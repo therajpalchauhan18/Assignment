@@ -25,57 +25,53 @@ Answer: CSS Flexbox (Flexible Box Layout) is a layout system used to arrange ele
 Question 2: Describe the properties justify-content, align-items, and flex-direction used in Flexbox.
 
 Answer:
+*justify-content:
+	-Aligns items horizontally (main axis)
 
-justify-content:
-
-Aligns items horizontally (main axis)
-
-Values:
-
-flex-start (default)
-flex-end
-center
-space-between
-space-around
+  Values:-
+	-flex-start (default)
+	-flex-end
+	-center
+	-space-between
+	-space-around
 
 Example:
-.container {
-  display: flex;
-  justify-content: center;
-}
-align-items:
+  .container {
+     display: flex;
+     justify-content: center;
+   }
 
-Aligns items vertically (cross axis)
 
-Values:
+*align-items:
+	-Aligns items vertically (cross axis)
 
-stretch (default)
-flex-start
-flex-end
-center
+  Values:-
+	-stretch (default)
+	-flex-start
+	-flex-end
+	-center
 
 Example:
 
-.container {
-  display: flex;
-  align-items: center;
-}
+  .container {
+     display: flex;
+     align-items: center;
+   }
 
-flex-direction:
 
-Defines the direction of flex items
+*flex-direction:
+	-Defines the direction of flex items
 
-Values:
-
-row (default)
-row-reverse
-column
-column-reverse
+Values:-
+	-row (default)
+	-row-reverse
+	-column
+	-column-reverse
 
 Example:
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
+  .container {
+     display: flex;
+    flex-direction: column;
+   }
 

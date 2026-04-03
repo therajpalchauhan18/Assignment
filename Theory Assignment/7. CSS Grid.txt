@@ -1,0 +1,55 @@
+Question 1: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over Flexbox?
+
+Answer: CSS Grid is a layout system used to create two-dimensional layouts (rows and columns).
+
+   Difference between Grid and Flexbox:
+    *CSS Grid:-
+	-Works in two dimensions (rows and columns)
+	-Suitable for complex layouts
+
+    *Flexbox:-
+	-Works in one dimension (either row or column)
+	-Suitable for simple layouts
+
+*When to use Grid:
+  -When designing full page layouts
+  -When both rows and columns need control
+  -For complex and structured designs
+
+*When to use Flexbox:
+  -For aligning items in a single row or column
+  -For simple layouts like navigation bars
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2: Describe the grid-template-columns, grid-template-rows, and grid-gap properties. Provide examples.
+
+Answer:
+
+*grid-template-columns:
+	-Defines the number and size of columns
+
+Example:-
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px 100px;
+}
+
+*grid-template-rows:
+	-Defines the number and size of rows
+
+Example:-
+.container {
+  display: grid;
+  grid-template-rows: 100px 150px;
+}
+
+*grid-gap:
+	-Defines the space between rows and columns
+
+Example:
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
