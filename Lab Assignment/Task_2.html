@@ -1,0 +1,53 @@
+<!-- Task: Create a contact form with the following fields: 
+o Full name (text input) 
+o Email (email input) 
+o Phone number (tel input) 
+o Subject (dropdown menu) 
+o Message (textarea) 
+o Submit button
+
+Additional Requirements: 
+o Use appropriate form validation using required, minlength, maxlength, and pattern. 
+o Link form labels with their corresponding inputs using the for attribute. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10 digit number"><br><br>
+
+        <!-- Subject Dropdown -->
+        <label for="subject">Subject:</label><br>
+        <select id="subject" name="subject" required>
+            <option value="">Select Subject</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="inquiry">Inquiry</option>
+        </select><br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required minlength="10" maxlength="200"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
