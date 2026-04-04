@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.blog-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Title */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Body Content */
+.content {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .blog-container {
+        padding: 15px;
+    }
+}
