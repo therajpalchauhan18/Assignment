@@ -1,0 +1,47 @@
+/* Center the card */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styling */
+.card {
+    width: 350px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box; /* border-box used here */
+    border-radius: 10px;
+}
+
+/* Profile image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    padding: 5px;
+    box-sizing: content-box; /* content-box used here */
+}
+
+/* Bio text */
+.bio {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Button */
+#follow-btn {
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#follow-btn:hover {
+    background-color: darkblue;
+}

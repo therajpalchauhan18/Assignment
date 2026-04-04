@@ -50,7 +50,7 @@ Answer: * CSS specificity determines which style rule is applied when multiple r
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Question 3: What is the difference between internal, external, and inline CSS? Discuss advantages and disadvantages.
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and disadvantages of each approach.
 
 Answer:
 
@@ -58,9 +58,9 @@ Answer:
 Example:
 	<p style="color: red;">Hello </p>
 
-Advantages:-
+  Advantages:-
 	Quick and easy for small changes
-Disadvantages:-
+  Disadvantages:-
 	-Not reusable
 	-Makes code messy
 
@@ -72,19 +72,19 @@ Example:
 	   }
 	</style>
 
-Advantages:-
+  Advantages:-
 	Useful for single page styling
 
-Disadvantages:-
+  Disadvantages:-
 	Cannot be reused across multiple pages
 
 *External CSS:- Written in a separate .css file and linked to HTML.
 Example:
 	<link rel="stylesheet" href="style.css">
 
-Advantages:-
+  Advantages:-
 	-Reusable across multiple pages
 	-Clean and maintainable
 
-Disadvantages:-
+  Disadvantages:-
 	-Requires extra file
